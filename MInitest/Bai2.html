@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+
+<form>
+    <table>
+        <tr>
+            <th><input type="text" id="First"></th>
+            <th><input type="text" id="Second"></th>
+        </tr>
+        <tr>
+            <td >
+                <button onclick="CaCul1()">Cộng</button>
+                <button onclick="CaCul2()">Trừ</button>
+                <button onclick="CaCul3()">Nhân</button>
+                <button onclick="CaCul4()">Chia</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<p id="Go"></p>
+<script>
+    function CaCul1() {
+        let A = +document.getElementById("First").value;
+        let B = +document.getElementById("Second").value;
+        let C = A + B;
+        document.getElementById("Go").innerHTML;
+        alert(C);
+    }
+
+    function CaCul2() {
+        let A = +document.getElementById("First").value;
+        let B = +document.getElementById("Second").value;
+        let C = A - B;
+        document.getElementById("Go").innerHTML;
+        alert(C);
+    }
+
+    function CaCul3() {
+        let A = +document.getElementById("First").value;
+        let B = +document.getElementById("Second").value;
+        let C = A * B;
+        document.getElementById("Go").innerHTML;
+        alert(C);
+    }
+
+    function CaCul4() {
+        let A = +document.getElementById("First").value;
+        let B = +document.getElementById("Second").value;
+        let C = A / B;
+        document.getElementById("Go").innerHTML;
+        alert(C);
+    }
+</script>
+
+</body>
+</html>

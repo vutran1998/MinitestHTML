@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai3</title>
+</head>
+<body>
+<p><input type="text" id="number" value="0">Mời bạn nhập</p>
+<button onclick="up()">Tăng</button>
+<button onclick="down()">Giảm</button>
+<p id="no"></p>
+<script>
+    function up() {
+        let A = +document.getElementById("number").value;
+        let B=A+2;
+        document.getElementById("no").innerHTML=B;
+    }
+
+    function down() {
+        let A = +document.getElementById("number").value;
+        let B=A-2;
+        document.getElementById("no").innerHTML=B;
+    }
+
+</script>
+</body>
+</html>
